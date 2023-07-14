@@ -1,0 +1,9 @@
+<div class="format">
+  <h1>Consulta CEP</h1>
+  <form action="">
+      <label for="txtCep">CEP:</label>
+      <input type="text" id="txtCep" name="txtCep" [(ngModel)]="cep" />
+      <button (click)="buscarEndereco()">Buscar</button>
+  </form>
+</div>
+<app-tabela [endereco]="endereco"></app-tabela>
